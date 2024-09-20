@@ -1,0 +1,20 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tradução Completa</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Tradução Completa!</h1>
+    <p>Seu documento foi traduzido e convertido em áudio com sucesso.</p>
+    <a href="{{ audio_url }}" download>
+        <button>Baixar Áudio</button>
+    </a>
+    <br><br>
+    <a href="{{ url_for('index') }}">
+        <button>Traduzir Outro Documento</button>
+    </a>
+</body>
+</html>

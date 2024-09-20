@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tradutor de Documentos em Voz</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tradutor de Documentos em Voz</h1>
+        <div class="rectangle"></div>
+        <form method="post" enctype="multipart/form-data">
+            <div class="file-upload">
+                <input type="file" name="file" accept=".pdf" required>
+            </div>
+            <div class="buttons">
+                <select name="language" required>
+                    <option value="en">Inglês</option>
+                    <option value="es">Espanhol</option>
+                    <option value="fr">Francês</option>
+                    <option value="zu">Português</option>
+                    <!-- Adicione outros idiomas conforme necessário -->
+                </select>
+                <button type="submit">Traduzir e Gerar Áudio</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
